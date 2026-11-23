@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+body {
+    background-color: black;
+    color: white
+}
+
+.main {
+    background-image: url(asset/image/bg.jpg);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(1700px, 100vw);
+    background-repeat: no-repeat;
+
+}
+
+
+@media screen and (max-width:1050px) {
+    .main {
+        background-image: url(asset/image/bg.jpg);
+        height: 100vh;
+        position: relative;
+        background-position: center center;
+        background-size: max(2500px, 100vw);
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width:450px) {
+    .main {
+        background-image: url(asset/image/bg.jpg);
+        height: 70vh;
+        position: relative;
+        background-position: center center;
+        background-size: max(1700px, 100vw);
+        background-repeat: no-repeat;
+    }
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.74;
+    background-color: black;
+}
+
+nav {
+    max-width: 87vw;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 150px;
+    position: relative;
+    z-index: 20;
+    margin-top: 24px;
+}
+@media screen and (max-width:450px) {
+    nav img{
+
+        width: 80px;
+        z-index: 20;
+    }
+}
+
+
+nav button {
+    position: relative;
+    z-index: 20;
+
+
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    /* gap: 3px; */
+
+    padding-left: 2px;
+    padding-right: 2px;
+
+
+}
+
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+
+}
+@media screen and (max-width:450px) {
+    .hero> :nth-child(1){
+        font-size: 28px;
+    }
+}
+
+
+.hero> :nth-child(2) {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 17px;
+
+}
+@media screen and (max-width:450px) {
+    .hero> :nth-child(2){
+        font-size: 15px;
+    }
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+@media screen and (max-width:450px) {
+    .hero> :nth-child(3){
+        font-size: 13px;
+    }
+}
+
+.separation {
+
+    position: relative;
+    bottom: 40px;
+
+    height: 40px;
+    border-top: 5px solid darkred;
+    /* border-radius: 50%; */
+    border-top-left-radius: 60% 120%;
+    border-top-right-radius: 60% 120%;
+    /* box-shadow: 10px 30px 5px blue, 0px 20px 60px 10px #1919ff; */
+    background: radial-gradient(60% 530% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+
+}
+@media screen and (max-width:450px) {
+    .separation{
+        bottom: 18px;
+    }
+}
+
+.btn {
+    position: relative;
+    padding: 6px 14px;
+    font-weight: 600;
+    background-color: rgba(248, 248, 243, 0.055);
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.option {
+    position: relative;
+    /* pointer-events: none; */
+    z-index: 9999;
+    padding: 3px 9px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(63, 63, 63, 0.438);
+    color: white;
+
+}
+@media screen and (max-width:450px) {
+    .option{
+        font-size: 11px;
+        padding: 2px 6px;
+        margin-top: 15px;
+        margin-right: 6px;
+    }
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 18px 40px;
+    font-size: 20px;
+    border: none;
+}
+@media screen and (max-width:450px) {
+    .btn-red{
+        font-size: 20px;
+        padding: 13px 30px;
+
+    }
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+@media screen and (max-width:450px) {
+    .hero-buttons{
+        flex-direction: column;
+        gap: 0px;
+        
+    }
+}
+
+.main input {
+    position: relative;
+    padding: 18px 80px 18px 14px;
+    font-size: 16px;
+    background: rgba(23, 23, 23, 0.7);
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+    border: 1px solid rgb(221, 220, 220, 0.7);
+    width: 10vw;
+
+
+}
+@media screen and (max-width:450px) {
+    .main input{
+        width: 65vw;
+    }
+}
+
+.btn-red-sm {
+    position: relative;
+    background-color: red;
+    color: white;
+    border: none;
+
+
+}
+
+.trending {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-left: 130px;
+    position: relative;
+    display: flex;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width:450px) {
+    .trending{
+        font-size: 20px;
+        margin-left: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 20px;
+    }
+}
+
+.movies {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+    scroll-behavior: smooth;
+    width: 75%;
+    height: 100%;
+    /* align-content: center; */
+    justify-self: center;
+}
+
+.movies::-webkit-scrollbar {
+    display: none;
+}
+
+.movies div {
+    position: relative;
+}
+
+.movies .number {
+    position: absolute;
+    left: -20px;
+    top: 160px;
+    font-weight: bolder;
+    font-size: 100px;
+    font-family: Arial, sans-serif;
+    color: black;
+    -webkit-text-stroke: 3px white;
+    z-index: 2;
+}
+
+.cardhead {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+    position: relative;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width:450px) {
+    .cardhead{
+        margin-left: 35px;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:normal;
+    }
+}
+
+.cards {
+    position: relative;
+    margin-top: 20px;
+    width: 75%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-self: center;
+    gap: 20px;
+    
+}
+
+@media screen and (max-width:950px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+        padding: 0;
+
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .cards {
+        grid-template-columns: 2fr;
+        justify-self: center;
+        padding: 0;
+
+    }
+
+}
+
+.card {
+    height: 100%;
+    background: linear-gradient(149deg,
+            #10162e 0%,
+            #14081a 50%,
+            #240715 100%);
+            border-radius: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card h3 {
+    margin: 13px;
+    font-size: 25px;
+}
+
+.card p {
+    font-size: 17px;
+    margin: 13px;
+    /* padding-bottom: 150px; */
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.623);
+    
+}
+
+.cards img {
+    height: 50px;
+    width: 60px;
+    display: flex;
+    justify-self: end;
+    align-items: end;
+    margin-top: 50px;
+    margin-right: 16px;
+    
+}
+
+.cards .img4 {
+    margin-bottom: 27px;
+}
+
+.cards .img1 {
+    margin-top: 90px;
+}
+
+.faq {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+    position: relative;
+    font-weight: 300;
+    font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    
+}
+@media screen and (max-width:450px) {
+    .faq{
+        font-size: 23px;
+        margin-left: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.allfaq {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    row-gap: 15px;
+    column-gap: 70px;
+    font-size: 29px;
+    margin: 20px auto;
+    align-items: start;
+    margin-top: 20px;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@media screen and (max-width:950px) {
+    .allfaq {
+
+        grid-template-columns: 1fr;
+        justify-self: center;
+        margin-left: 64px;
+        width: 80%;
+        font-size: 19px;
+
+    }
+
+
+}
+
+@media screen and (max-width:810px) {
+    .allfaq {
+
+        grid-template-columns: 1fr;
+        justify-self: center;
+        margin-left: 59px;
+        width: 80%;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .allfaq {
+
+        grid-template-columns: 1fr;
+        justify-self: center;
+        margin-left: 49px;
+        width: 80%;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .allfaq {
+
+        grid-template-columns: 1fr;
+        justify-self: center;
+        margin-left: 39px;
+        width: 80%;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .allfaq {
+
+        grid-template-columns: 1fr;
+        justify-self: center;
+        margin-left: 24px;
+        width: 80%;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .allfaq {
+
+        grid-template-columns: 1fr;
+        justify-self: center;
+        margin-left: 19px;
+        width: 80%;
+        font-size: 19px;
+    }
+}
+
+
+.que {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(41, 40, 40);
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+.ans {
+    font-size: 25px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(41, 40, 40);
+    height: auto;
+    padding: 20px;
+
+}
+
+@media screen and (max-width:950px) {
+    .ans {
+        font-size: 16px;
+    }
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 70px;
+
+}
+
+.last h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.lastform input {
+    position: relative;
+    padding: 18px 80px 18px 14px;
+    font-size: 16px;
+    background: rgba(23, 23, 23, 0.7);
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+    border: 1px solid rgb(221, 220, 220, 0.7);
+    width: 36vw;
+    margin-right: 10px;
+
+}
+
+@media screen and (max-width:450px) {
+    .last {
+        justify-self: center;
+        width: 88%;
+        line-height: 28px;
+        position: relative;
+    }
+
+    .lastform input {
+        width: 75%;
+    }
+
+    .last h4 {
+        font-size: 16px;
+        text-align: start;
+
+    }
+
+    .btn-red {
+        margin-top: 17px;
+
+    }
+}
+
+.qc {
+    color: rgb(173, 171, 171);
+    justify-self: center;
+    width: 75%;
+    margin-top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@media screen and (max-width:450px) {
+    .qc {
+        justify-self: center;
+        width: 88%;
+    }
+}
+
+
+.qc .num {
+    text-decoration: underline;
+
+}
+
+.queopt {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-self: center;
+    width: 75%;
+    gap: 20px;
+
+}
+
+.opt {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: rgb(177, 175, 175);
+
+}
+
+@media screen and (max-width:450px) {
+    .queopt {
+        justify-self: center;
+        width: 88%;
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+}
+
+.lselect {
+    justify-self: end;
+    width: 88%;
+    margin-top: 60px;
+
+}
+
+@media screen and (max-width:450px) {
+    .lselect {
+        width: 94%;
+
+    }
+
+}
+
+.NI {
+    margin-top: 40px;
+    justify-self: center;
+    width: 76%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(177, 175, 175);
+}
+@media screen and (max-width:450px) {
+    .NI{
+        justify-self: center;
+        width: 88%;
+
+    }
+}
+
+.LL {
+    margin-top: 40px;
+    margin-bottom: 130px;
+    justify-self: center;
+    width: 76%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(177, 175, 175);
+    font-size: 13px;
+    
+}
+@media screen and (max-width:450px) {
+    .LL{
+        justify-self: center;
+        width: 88%;
+
+    }
+}
